@@ -60,7 +60,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: url(images/bricksbg.jpg)
+  background: url(images/background.jpg)
       center center fixed no-repeat;
     background-size: cover;
 	
@@ -68,23 +68,24 @@ html, body {
 }
 
 .center {
-    width: 800px;
-	padding: 2%;
+    width: 600px;
+	padding: 1%;
     margin: 100px auto;
- 	background: rgba(0, 150, 178, .75); /*this uses opacity of 75% for the background color*/
+ 	background: rgba(256, 256, 256, .1); /*this uses opacity of 75% for the background color*/
 	text-align: center;
-	border: 4px dashed white;
+
 }
 
    
 #logo {
-    margin-bottom: 16px;
-	border: 3px dashed red;
+    margin-bottom: 75px;
+	margin-top: 5px;
+    margin-left: 10px;
 	text-align: center;
 }
 
 h1 {
-	font-family: garamond, serif;
+	font-family: lust, serif;
 	font-size: 2em;
     margin: 0px auto 10px auto;
     color: #fff;
@@ -102,18 +103,17 @@ h2 {
 }
 
 p {
-	font-family: garamond, serif;		;
+	font-family: lust, serif;		;
 	font-size: 1.2em;
     line-height: 1.6;
     color: #fff;
 }
     
 nav{
-    font-family: garamond;
+    font-family: lust, serif;
     font-size: 1.2em;
     width: 400px;
     margin: 0 auto;
-    border: dashed turquoise;
     border-width: 3px 0;
     text-align: center;
     margin-top: 2em;  
@@ -135,6 +135,6 @@ a{
     }
 a:hover{
     color:black;
-    background:pink; 
+    background:white; 
     }
 
