@@ -24,7 +24,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font: inherit ;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -63,6 +63,7 @@ html, body {
   background: url(images/background.jpg)
       center center fixed no-repeat;
     background-size: cover;
+    font-family: "lust", serif;
 	
 	
 }
@@ -125,11 +126,11 @@ nav li{
 
 nav a{
     display:inline-block;
-    padding: 10px;   
+    padding: 15px;   
     }
 
 a{
-    color:#444;
+    color:#0c4c2c;
     text-decoration: none;
     font-weight: bold;    
     }
