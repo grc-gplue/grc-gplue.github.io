@@ -27,7 +27,7 @@ h1 span {
 }
 
 h2 {
-	background-color: (150,150,165);
+	background-color: rgb(150,150,165);
 	color: rgb(255,255,255);
 	font-size: 2em;
 	padding: 1rem .5rem .5rem;
