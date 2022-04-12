@@ -36,7 +36,7 @@ h2 {
 }
 
 h3 {
-	margin: 1rem 1rem 1rem; /*Three values again. You got the idea.*/
+	margin: 1rem 1rem 2rem; /*Three values again. You got the idea.*/
 	padding-top: 3rem;
 	font-size: 1.5rem;
 	color: rgb(169,50,43);
