@@ -47,7 +47,8 @@ figcaption {
     padding: .5rem, .1rem, 5rem 2rem;
     font-family: lust, serif;
     font-weight: 700;
-    font-style: normal;}
+    font-style: normal;
+    color: rgb(30,30,30)}
 
 h3 {
 	margin: 1rem 1rem 0rem; /*Three values again. You got the idea.*/
