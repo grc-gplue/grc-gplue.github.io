@@ -1,0 +1,110 @@
+/*CSS DOCUMENT*/
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+
+img {
+	width: 100%;
+	display: block;
+}
+
+body {
+	background-color: rgb(225, 225, 225); /* Not totally white. */
+	color: rgb(30,30,30);  /* Not totally black. */
+	line-height: 140%; 	/* A little extra leading. */
+	font-family: sans-serif;
+}
+
+nav ul li {
+    display: inline
+}
+
+nav ul li a:hover{
+    color:rgb(92, 186, 161);
+}
+
+h1{
+    width: 8em;}
+
+h2 {
+        background-color: rgb(92, 186, 161);
+        color: rgb(30,30,30);
+        font-size: 4rem;
+        padding: 2rem 2rem 2rem; 
+        font-family: lust, serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+figcaption {   
+    line-height: 160%;
+    font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: italic;
+    padding: 1rem 2rem 1rem; 
+}
+ p{
+    margin: 1rem 2rem 3rem;
+    padding: .5rem, .1rem, 5rem 2rem;
+    font-weight: 700;
+    font-style: normal;}
+
+h3 {
+	margin: 1rem 1rem 0rem; /*Three values again. You got the idea.*/
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+	font-size: 2rem;
+	color: rgb(18, 18, 18);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1em; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
+    font-family: lust, serif;
+    font-weight: 700;
+    font-style: normal;
+   
+
+}
+
+h4 {
+	margin: 1rem 1rem 0rem; /*Three values again. You got the idea.*/
+    padding-left: 1rem;
+	font-size: 1.25rem;
+	color: rgb(30,30,30);
+	letter-spacing: 0.1em; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
+    font-family: lust, serif;
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+h5 {
+	margin: 1rem 1rem 0rem; /*Three values again. You got the idea.*/
+    padding-left: 1rem;
+	font-size: 1rem;
+	color: rgb(30,30,30)
+	letter-spacing: 0.1em; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
+    font-family: lust, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+li {
+    font-size: 1em;
+    font-family: lust, serif;
+    font-weight: 700;
+    font-style: normal;
+    display: list-item;
+    line-height: 2.25rem;
+}
+
+ul{
+    margin: 1rem 2rem 3rem;
+    padding: .5rem, .1rem, 5rem 2rem
+    font-family: lust, serif;
+    font-weight: 700;
+    font-style: normal;}
+
+    
+
+
+/*Please don’t change this CSS stylesheet for the content hierarchy assginment */
