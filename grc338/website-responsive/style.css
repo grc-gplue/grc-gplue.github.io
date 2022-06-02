@@ -228,9 +228,4 @@ main {
     grid-template-columns: auto;
 }
 
-nav ul{
-    display: grid;
-    grid-template-columns: auto;
-}
-
 /*Please don’t change this CSS stylesheet for the content hierarchy assginment */
