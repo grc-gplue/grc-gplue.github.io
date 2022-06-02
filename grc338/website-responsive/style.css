@@ -88,7 +88,6 @@ video {
 
 img {
     width: 100%;
-    max-width: 1024px;
     display: block;
     padding-left: 2em;
 }
@@ -106,8 +105,8 @@ nav ul {
     justify-content: space-between;
     list-style-type: none;
     font-size: 2em;
-    border-bottom: 2px solid rgb(118, 208, 175);
-    border-top: 2px solid rgb(118, 208, 175);
+    border-bottom: 2rem solid rgb(118, 208, 175);
+    border-top: 2rem solid rgb(118, 208, 175);
     padding-bottom: 1em;
     padding-top: 1em;
 }
@@ -135,7 +134,7 @@ h2 {
     font-family: lust, serif;
     font-weight: 700;
     font-style: normal;
-    border-bottom: 2px solid rgb(118, 208, 175);
+    border-bottom: 2rem solid rgb(118, 208, 175);
 }
 
 figcaption {
