@@ -104,7 +104,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    font-size: 2em;
+    font-size: 1em;
     border-bottom: 2rem solid rgb(118, 208, 175);
     border-top: 2rem solid rgb(118, 208, 175);
     padding-bottom: 1em;
