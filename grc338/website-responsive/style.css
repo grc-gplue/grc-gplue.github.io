@@ -214,8 +214,7 @@ ul {
     figure {
         display: grid;
         grid-template-columns: auto;
-        width: 60%;
-        text-align: center;
+        width: 10%;
     }
     figure main {
         grid-column: 1/2;
@@ -225,6 +224,11 @@ ul {
     }
 }
 main {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+nav ul{
     display: grid;
     grid-template-columns: auto;
 }
