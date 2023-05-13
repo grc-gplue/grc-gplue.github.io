@@ -82,9 +82,7 @@ audio,
 video {
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
-}
+	border: 0;}
 
 body {
     background-color: rgb(225, 225, 225); /* Not totally white. */
