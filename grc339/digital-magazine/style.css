@@ -133,19 +133,3 @@ ul {
     list-style-type: none;
     padding: 0;
 }
-@media screen and (min-width: 100em) {
-    figure {
-        display: grid;
-        grid-template-columns: auto;
-    }
-    figure main {
-        grid-column: 1/2;
-    }
-    figure img {
-        grid-column: 2/3;
-    }
-}
-main {
-    display: grid;
-    grid-template-columns: auto;
-}
