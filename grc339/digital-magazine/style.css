@@ -21,6 +21,9 @@ h2 {
     width: 25em;   
     color:rgb(37, 67, 85);}
     
+h3 {
+	font-family: Helvetica;
+	width: 25em;}
 
 figcaption {   
     line-height: 160%;
