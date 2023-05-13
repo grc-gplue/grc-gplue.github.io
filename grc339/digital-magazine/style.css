@@ -1,0 +1,49 @@
+/*CSS document*/
+
+body {
+    background-color: rgb(225, 225, 225); /* Not totally white. */
+	color: rgb(30,30,30);  /* Not totally black. */
+	line-height: 140%; 	/* A little extra leading. */
+	font-family: Helvetica, sans-serif;
+}
+nav ul li {
+    display: inline
+}
+
+nav ul li a:hover{
+    color:rgb(46, 196, 182);
+}
+
+h1{
+    width: 8em;}
+
+h2 {
+    width: 25em;   
+    color:rgb(37, 67, 85);}
+    
+
+figcaption {   
+    line-height: 160%;
+    font-family: Helvetica;
+    font-weight: 400;  
+    font-style: italic;
+    padding: 1rem 2rem 1rem; 
+}
+
+div.container {
+    max-width: 40em;
+    margin: auto;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
