@@ -4,7 +4,7 @@ body {
     background-color: rgb(225, 225, 225); /* Not totally white. */
 	color: rgb(30,30,30);  /* Not totally black. */
 	line-height: 140%; 	/* A little extra leading. */
-	font-family: Helvetica, sans-serif; 
+	font-family: Helvetica, sans-serif;
 }
 nav ul li {
     display: inline
