@@ -1,213 +1,59 @@
-/*CSS DOCUMENT*/
-html,
-body,
-div,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+/*CSS document*/
+
+body {
+    background-color: rgb(225, 225, 225); /* Not totally white. */
+	color: rgb(30,30,30);  /* Not totally black. */
+	line-height: 140%; 	/* A little extra leading. */
+	font-family: Helvetica, sans-serif;
+}
+nav ul li {
+    display: inline
+}
+
+nav ul li a:hover{
+    color:rgb(46, 196, 182);
+    font-family: Helvetica;
+    font-style: bold;}
+
+
+h1{
+    width: 8em;}
+
+h2 {
+    width: 25em;   
+    color:rgb(37, 67, 85);}
+
+h3{
+    line-height: 160%;
+    color:rgb(37, 67, 85);
+    font-weight: 400;  
+    font-style: bold;}
+
+
+figcaption {   
+    line-height: 160%;
+    font-family: Helvetica;
+    font-weight: 400;  
+    font-style: italic;
+    padding: 1rem 2rem 1rem; 
+}
+
+div.container {
+    max-width: 40em;
+    margin: auto;
+}
+
+figure {
     margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
 }
 
 img {
     width: 100%;
-    display: block;
-    padding-left: 2em;
-}
-
-body {
-    background-color: rgb(245, 240, 224); /* Not totally white. */
-    color: rgb(30, 30, 30); /* Not totally black. */
-    line-height: 140%; /* A little extra leading. */
-    font-family: sans-serif;
-}
-
-nav ul {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    font-size: 1em;
-    border-bottom: 2rem solid rgb(118, 208, 175);
-    border-top: 2rem solid rgb(118, 208, 175);
-    padding-bottom: 1em;
-    padding-top: 1em;
-}
-a {
-    text-decoration: none;
-    color: rgb(250 164 189);
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a:hover {
-    color: rgb(118, 208, 175);
-}
-
-h1 {
-    width: 8em;
-}
-
-h2 {
-    color: rgb(30, 30, 30);
-    font-size: 4rem;
-    padding: 2rem 2rem 1rem;
-    font-family: lust, serif;
-    font-weight: 700;
-    font-style: normal;
-    border-bottom: 2rem solid rgb(118, 208, 175);
-}
-
-figcaption {
-    line-height: 160%;
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    padding: 1rem 2rem 1rem;
-}
-p {
-    margin: 1rem 2rem 3rem;
-    padding: 0.5rem, 0.1rem, 5rem 2rem;
-    font-family: p22-mackinac-pro, serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
-    line-height: 200%;
-    color: rgb(30, 30, 30);
-}
-
-h3 {
-    margin: 1rem 1rem 0rem; /*Three values again. You got the idea.*/
-    padding-left: 1rem;
-    padding-bottom: 1.25rem;
-    padding-top: 3rem;
-    font-size: 2rem;
-    color: rgb(18, 18, 18);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.3em; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
-    font-family: lust, serif;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 200%;
-}
-
-h4 {
-    margin: 1rem 1rem 0rem; /*Three values again. You got the idea.*/
-    padding-left: 1rem;
-    font-size: 1.25rem;
-    color: rgb(30, 30, 30);
-    letter-spacing: 0.1em; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
-    font-family: lust, serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-h5 {
-    margin: 1rem 1rem 0rem; /*Three values again. You got the idea.*/
-    padding-left: 1rem;
-    font-size: 1rem;
-    color: rgb(30, 30, 30);
-    letter-spacing: 0.1em; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
-    font-family: lust, serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-li {
-    font-size: 1em;
-    font-family: lust, serif;
-    font-weight: 700;
-    font-style: normal;
-    display: list-item;
-    line-height: 2.25rem;
 }
 
 ul {
-    margin: 1rem 2rem 3rem;
-    padding: 0.5rem, 0.1rem, 5rem 2rem;
-    font-family: lust, serif;
-    font-weight: 700;
-    font-style: normal;
+    list-style-type: none;
+    padding: 0;
 }
 
 @media screen and (min-width: 100em) {
@@ -222,9 +68,3 @@ ul {
         grid-column: 2/3;
     }
 }
-main {
-    display: grid;
-    grid-template-columns: auto;
-}
-
-/*Please don’t change this CSS stylesheet for the content hierarchy assginment */
