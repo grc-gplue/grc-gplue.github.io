@@ -1,0 +1,151 @@
+/*CSS document*/
+main {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 0em;
+}
+
+section.mainstory {
+    grid-column: 2/4;
+    grid-row: 1/3;
+    display:flex;
+    flex-direction:column;
+}
+
+section.mainstory figure {
+    flex: 1 0 18em;
+    display: flex;
+    flex-direction: column;
+    background-color: #ff0;
+}
+section.mainstory figure div {
+    flex: 1 0 18em;
+    background-image: url(kelly.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.mainstory figure div img {
+    height: 100%;
+    opacity: 0;
+}
+section.mainstory figure figcaption {
+    flex: 0 0 3em
+}
+
+body {
+    background-color: rgb(225, 225, 225); /* Not totally white. */
+	color: rgb(30,30,30);  /* Not totally black. */
+	line-height: 140%; 	/* A little extra leading. */
+	font-family: "new-kansas", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+nav ul li {
+    display: inline;
+    font-family: "new-kansas", sans-serif;
+    font-weight: 400;
+    font-size: larger;
+    color:rgb(81, 121, 146);
+    width: max-content;
+    font-style: bold; 
+    text-transform: uppercase;
+    padding-left: 2em;
+}
+
+
+a:visited { 
+    text-decoration: none; 
+    color: rgb(81, 121, 146); 
+    text-decoration: none;
+   }
+   
+   a:link { 
+    text-decoration: none; 
+    color: rgb(81, 121, 146); 
+   }
+   
+nav ul li a:hover{
+    color:rgb(37, 67, 85);}
+
+
+h1{
+    width: 15em;
+    padding-bottom: 0%;
+    padding-left: 2em;}
+
+h2 {
+    width: 30em;   
+    color:rgb(37, 67, 85);
+    text-transform: uppercase;
+    padding-left: 2em;}
+    
+
+h3{
+    line-height: 200%;
+    color:rgb(37, 67, 85);
+    font-weight: 400; 
+    text-transform: uppercase;
+    padding-left: 2em;
+    }
+p{
+    color:rgb(81, 121, 146);
+    padding-left: 2em;
+    padding-bottom: 2em;
+}
+
+figcaption {   
+    line-height: 50%;
+    font-family: Helvetica;
+    font-weight: 400;  
+    font-style: italic;
+    padding-top: 1em;
+}
+
+div.container {
+    max-width: 90em;
+    margin: auto;
+}
+
+
+
+img {
+    width: 100%;
+    padding: 0rem 0rem 0rem
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+@media screen and (min-width: 100em) {
+    div.container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    header {
+        grid-column: 1/3;
+    }
+    main {
+        grid-column: 1/2;
+    }
+    aside{
+        grid-column: 2/3;
+        padding-left: 1em;
+    }
+    figure {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    figure main {
+        grid-column: 1/2;
+    }
+    figure img {
+        grid-column: 1/2;
+    }
+}
