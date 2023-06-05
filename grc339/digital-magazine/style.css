@@ -6,11 +6,11 @@ div.container {
     background-color: rgb(243, 243, 234);
 }
 
-section {
-    max-width: 40em;
-    margin: 0 auto 3em;
-}
 
+
+h1 {
+    padding-left: -1em;
+}
 body {
     background-color:  rgb(243, 243, 234); /* Not totally white. */
 	color: rgb(30,30,30);  /* Not totally black. */
@@ -20,9 +20,6 @@ body {
     font-style: normal;
 }
 
-figure {
-    margin: 0;
-}
 
 img {
     width: 90%;
@@ -31,6 +28,7 @@ img {
 ul {
     list-style-type: none;
     padding: 0;
+    padding-left: 0.5em;
 }
 
 li {
@@ -49,6 +47,13 @@ li a {
     text-transform: uppercase;
 }
 
+form ul {
+    padding-left: 2em;
+}
+section.method {
+    padding-left: 2em;
+}
+
 a:link, a:visited, a:active {
     color: #000000;
     text-decoration: none;
@@ -59,7 +64,6 @@ a:hover {
 }
 
 nav ul li {
-    display: inline;
     font-family: "elza", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -69,8 +73,6 @@ nav ul li {
     padding-left: 0em;
 }
 
-
-
    
 nav ul li a:hover{
     color:rgb(83, 134, 174);}
@@ -78,6 +80,7 @@ nav ul li a:hover{
 
 h1{
     width: 15em;
+    padding-left: 1em;
 }
 
 h2 {
@@ -86,7 +89,8 @@ h2 {
     font-style: normal;
     text-transform: uppercase;
     color: rgb(83, 134, 174);
-    padding-right: 4rem;}
+    padding-right: 4rem;
+    padding-left: 1.25em; }
     
 
 h3{
@@ -95,6 +99,7 @@ h3{
     font-style: normal;
     text-transform: uppercase;
     padding-right: 4rem;
+    padding-left: 2em;
 }
 
 h4 {
@@ -103,9 +108,10 @@ h4 {
 
 p {
     font-family: "elza", sans-serif;
-font-weight: 400;
-font-style: normal;
+    font-weight: 400;
+    font-style: normal;
     padding-right: 4em;
+    padding-left: 3em;
 }
 
 figcaption {
@@ -114,14 +120,17 @@ figcaption {
     font-style: italic;
     padding-right: 4em;
     padding-bottom: 2em;
+    padding-left: 0em;
 }
 
-.footer {
+footer {
     font-family: "elza", sans-serif;
 font-weight: 100;
 font-style: italic;
     color: rgb(46, 111, 216);
+    display:grid;
 }
+
 
 aside.extras {
     padding-top: 2em;
@@ -135,6 +144,31 @@ div.newsletter {
     padding: 1em;
 }
 
+aside h3 {
+    padding-left: 2em;
+}
+
+aside figure {
+    display:grid;
+    padding-right: 3em;
+
+}
+
+aside p {
+    padding-left: 2em;
+}
+
+section.secondary h3{
+    padding-left: 2em;
+}
+
+section.secondary p{
+    padding-left: 2em;
+}
+
+section.personal-info img {
+    padding-left: 2em;
+}
 
 @media screen and (min-width: 60em) {
 
@@ -142,7 +176,6 @@ div.newsletter {
         display: grid;
         grid-template-columns: 8fr 3fr;
         grid-gap: 0 1em;
-        margin: 0 auto;
     }
 
     header {
@@ -153,7 +186,6 @@ div.newsletter {
         grid-column: 1/2;
         display: grid;
         grid-gap: 0 1em;
-        flex-grow: auto;
     }
 
     section.mainstory {
@@ -161,13 +193,11 @@ div.newsletter {
         grid-row: 1/2;
         display: flex;
         flex-direction: column;
-        margin: 0 0 2em;
         grid-template-rows: auto;
         flex: 1 auto 100%;
     }
 
     section.mainstory figure {
-        flex: 1 auto 100%;
         display: flex;
         flex-direction: column;
         
@@ -190,23 +220,22 @@ div.newsletter {
 
     section.mainstory h3 {
         flex: 2 auto 100%;
-        flex-wrap: wrap;
-        margin: 0;
         padding-top: 2rem;
         min-width: 75ch;
+        margin-left: 0em;
     }
 
     section.mainstory p {
         flex: 0 0 auto;
-        margin: 2em 0 0 0;
         min-width: 75ch;
+        padding-left: 2em;
     }
 
     section.photogallery {
         grid-column: 1/3;
         grid-row: 4/5;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin: 0 0 2em;
         grid-template-rows: auto;
     }
@@ -251,12 +280,13 @@ div.newsletter {
     
     aside.extras {
         border: none;
+        padding-left: 1em;
     }
     
     div.gallery {
         max-width: 60em;
         margin: 0 auto;
-        padding: 1em;
+        padding-left: 1em;
         display: grid;
         grid-template-rows: repeat(4, auto);
     }
@@ -269,32 +299,35 @@ div.newsletter {
     }
 
     figure.displayedphoto {
-        margin: 0;
-        margin-top: 4em;
+        margin-top: 6em;
+        padding-left: 0em;
         width: 100%;
         height: 100%;
         position: absolute;
         opacity: 0;
-        transition: 0.5s ease-in-out;
+        transition: 1s ease-in-out;
         display: grid;
+        overflow: hidden;
     }
 
     figure.displayedphoto img {
-        width: 59em;
+        width: 100%;
         height: 100%;
         grid-row: 1/2;
     }
 
     figure.displayedphoto figcaption {
         margin-top: 1em;
+        margin-bottom: 1em;
         grid-row: 2/3;
     } 
 
     nav.photo {
         grid-row: 3/4;
         display: flex;
-        flex-wrap: wrap;
-        padding-top: 3em;
+        flex-wrap: wrap; 
+        margin-right: -4em;
+        padding-inline-start: 3em;
     }
 
     .box img{
@@ -327,7 +360,8 @@ div.newsletter {
     }
     
     footer {
-        grid-row: 4/5;
+        display: inline-grid;
+        grid-row: 5/5;
     }
 
     div.newsletter {
