@@ -1,4 +1,5 @@
 /*CSS document*/
+/* ------------------------------------------------- DIV ------------------------------------------------- */
 
 div.container {
     max-width: 100%;
@@ -6,30 +7,19 @@ div.container {
     background-color: rgb(243, 243, 234);
 }
 
-
-
-h1 {
-    padding-left: -1em;
-}
 body {
-    background-color:  rgb(243, 243, 234); /* Not totally white. */
-	color: rgb(30,30,30);  /* Not totally black. */
-	line-height: 140%; 	/* A little extra leading. */
-	font-family: "elza", sans-serif;
+    background-color: rgb(243, 243, 234); /* Not totally white. */
+    color: rgb(30, 30, 30); /* Not totally black. */
+    line-height: 140%; /* A little extra leading. */
+    font-family: "elza", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-
 img {
     width: 90%;
-    }
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    padding-left: 0.5em;
 }
+
 
 li {
     display: inline;
@@ -47,14 +37,13 @@ li a {
     text-transform: uppercase;
 }
 
-form ul {
-    padding-left: 2em;
-}
 section.method {
     padding-left: 2em;
 }
 
-a:link, a:visited, a:active {
+a:link,
+a:visited,
+a:active {
     color: #000000;
     text-decoration: none;
 }
@@ -62,25 +51,37 @@ a:link, a:visited, a:active {
 a:hover {
     color: rgb(83, 134, 174);
 }
+/* ------------------------------------------------- NAV ------------------------------------------------- */
 
 nav ul li {
     font-family: "elza", sans-serif;
     font-weight: 700;
     font-style: normal;
-    color:rgb(81, 121, 146);
+    color: rgb(81, 121, 146);
     width: max-content;
     text-transform: uppercase;
-    padding-left: 0em;
+    padding-left: .5em;
 }
 
-   
-nav ul li a:hover{
-    color:rgb(83, 134, 174);}
+ul {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 0.5em;
+}
+
+nav ul li a:hover {
+    color: rgb(83, 134, 174);
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
 
 
-h1{
+
+/* ------------------------------------------------- TEXT ------------------------------------------------- */
+
+h1 {
     width: 15em;
-    padding-left: 1em;
+    padding-left: 1.2em;
 }
 
 h2 {
@@ -90,10 +91,10 @@ h2 {
     text-transform: uppercase;
     color: rgb(83, 134, 174);
     padding-right: 4rem;
-    padding-left: 1.25em; }
-    
+    padding-left: 1.75em;
+}
 
-h3{
+h3 {
     font-family: "elza", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -125,17 +126,58 @@ figcaption {
 
 footer {
     font-family: "elza", sans-serif;
-font-weight: 100;
-font-style: italic;
-    color: rgb(46, 111, 216);
-    display:grid;
-}
+    font-weight: 100;
+    font-style: italic;
+    color: rgb(83, 134, 174);
+    display: grid;
 
+}
+/* ------------------------------------------------- ASIDE ------------------------------------------------- */
 
 aside.extras {
     padding-top: 2em;
     border-top: 1.5px solid rgb(25, 25, 25);
     border-bottom: 1.5px solid rgb(25, 25, 25);
+}
+
+aside h3 {
+    padding-left: 2em;
+}
+
+aside figure {
+    display: grid;
+    padding-right: 3em;
+}
+
+aside p {
+    padding-left: 2.5em;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------SECONDARY----------------------------------------------- */
+
+section.secondary h3 {
+    padding-left: 2em;
+}
+
+section.secondary p {
+    padding-left: 2.5em;
+}
+
+section.personal-info img {
+    padding-left: 2em;
+}
+/* ------------------------------------------------------------------------------------------------------- */
+
+/* -----------------------------------------------FORM----------------------------------------------- */
+form ul {
+    padding-left: 2em;
+}
+section.personal-info {
+    padding-left: .5em;
 }
 
 div.newsletter {
@@ -144,34 +186,10 @@ div.newsletter {
     padding: 1em;
 }
 
-aside h3 {
-    padding-left: 2em;
-}
+/* ------------------------------------------------------------------------------------------------------- */
 
-aside figure {
-    display:grid;
-    padding-right: 3em;
-
-}
-
-aside p {
-    padding-left: 2em;
-}
-
-section.secondary h3{
-    padding-left: 2em;
-}
-
-section.secondary p{
-    padding-left: 2em;
-}
-
-section.personal-info img {
-    padding-left: 2em;
-}
 
 @media screen and (min-width: 60em) {
-
     div.container {
         display: grid;
         grid-template-columns: 8fr 3fr;
@@ -185,8 +203,10 @@ section.personal-info img {
     main {
         grid-column: 1/2;
         display: grid;
-        grid-gap: 0 1em;
+        grid-gap: 0em;
     }
+    
+    /* ----MAINSTORY------------------------------------------------ */
 
     section.mainstory {
         grid-column: 1/3;
@@ -197,17 +217,17 @@ section.personal-info img {
         flex: 1 auto 100%;
     }
 
+
     section.mainstory figure {
         display: flex;
         flex-direction: column;
-        
     }
 
     section.mainstory figure div {
         flex: 1 auto 100%;
         grid-column: 1/3;
         background-image: url(MG2.jpg);
-        background-repeat: no-repeat;
+        background-repeat:no-repeat;
         background-size: cover;
         background-position: center;
         width: 65em;
@@ -215,6 +235,7 @@ section.personal-info img {
 
     section.mainstory figure div img {
         height: 100%;
+        width: 100%;
         opacity: 0;
     }
 
@@ -228,24 +249,28 @@ section.personal-info img {
     section.mainstory p {
         flex: 0 0 auto;
         min-width: 75ch;
-        padding-left: 2em;
+        padding-left: 2.5em;
+    }
+    /* ----ASIDE------------------------------------------------ */
+    aside {
+        grid-column: 2/3;
     }
 
+    aside.extras {
+        border: none;
+        padding-left: 1em;
+    }
+/* ----PHOTOGALLERY------------------------------------------------ */
     section.photogallery {
-        grid-column: 1/3;
-        grid-row: 4/5;
-        display: flex;
-        flex-direction: row;
-        margin: 0 0 2em;
-        grid-template-rows: auto;
+        grid-row: 2/3;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: calc(72% + 1em);
     }
 
-    section.photogallery figure {
-        flex: 1 auto 100%;
-        display: flex;
-        flex-direction: column;
-        flex-basis: 150%;
-        
+    section.photogallery img {
+       width: fit-content;
+       height: auto;
     }
 
     section.photogallery figure div {
@@ -272,17 +297,7 @@ section.personal-info img {
         margin: 2em 0 0 0;
         min-width: 75ch;
     }
-    
-    aside {
-        grid-column: 2/3;
-        
-    }
-    
-    aside.extras {
-        border: none;
-        padding-left: 1em;
-    }
-    
+
     div.gallery {
         max-width: 60em;
         margin: 0 auto;
@@ -290,7 +305,7 @@ section.personal-info img {
         display: grid;
         grid-template-rows: repeat(4, auto);
     }
-    
+
     main.photogallery {
         grid-row: 2/3;
         position: relative;
@@ -302,7 +317,6 @@ section.personal-info img {
         margin-top: 6em;
         padding-left: 0em;
         width: 100%;
-        height: 100%;
         position: absolute;
         opacity: 0;
         transition: 1s ease-in-out;
@@ -317,20 +331,20 @@ section.personal-info img {
     }
 
     figure.displayedphoto figcaption {
-        margin-top: 1em;
+        margin-top: 2em;
         margin-bottom: 1em;
         grid-row: 2/3;
-    } 
+    }
 
     nav.photo {
         grid-row: 3/4;
         display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         margin-right: -4em;
         padding-inline-start: 3em;
     }
 
-    .box img{
+    .box img {
         width: 6.499em;
         height: 6.3em;
         margin-right: 1em;
@@ -342,8 +356,7 @@ section.personal-info img {
         display: block;
         flex-basis: 10em;
     }
-    
-    
+
     input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
     input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
     input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
@@ -351,14 +364,14 @@ section.personal-info img {
     input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
     input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
     input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
-    input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+    input:nth-of-type(8):checked ~ main figure:nth-of-type(8) {
         opacity: 1;
     }
 
     input.gallerynav {
         display: none;
     }
-    
+
     footer {
         display: inline-grid;
         grid-row: 5/5;
@@ -366,12 +379,10 @@ section.personal-info img {
 
     div.newsletter {
         margin: auto;
-      }
+    }
 
     p {
         min-width: 50ch;
         max-width: 75ch;
     }
-    
-   
 }
