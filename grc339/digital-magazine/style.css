@@ -220,7 +220,7 @@ div.newsletter {
     section.mainstory figure {
         display: flex;
         flex-direction: column;
-        margin: 0;
+        padding: 0;
     }
 
     section.mainstory figure div {
